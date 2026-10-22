@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>table3.html</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  table.main { border-collapse: collapse; width: 100%; }
+  .main th, .main td { border: 1px solid black; padding: 6px; text-align: center; }
+  .header { background: #23487a; color: white; }
+  .col-nama { background: #e8eef7; text-align: left; font-weight: bold; }
+  .col-s1 { background: #eaf2fb; }
+  .col-s2 { background: #eafff0; }
+  .lulus { color: #1b5e20; font-weight: bold; }
+  .remed { color: #c62828; font-weight: bold; }
+  .inner-table { border-collapse: collapse; width: 100%; }
+  .inner-table td { border: 1px solid black; padding: 4px 6px; font-size: 13px; }
+  .inner-header { background: #ff7a00; color: white; border: 1px solid black; padding: 4px 6px; } /* OREN */
+</style>
+</head>
+<body>
+
+<p><b>Laporan Nilai Mahasiswa TI-2024</b></p>
+
+<table class="main">
+<tr>
+<th class="header" rowspan="2">Nama</th>
+<th class="header" colspan="3">Semester 1</th>
+<th class="header" colspan="3">Semester 2</th>
+<th class="header" rowspan="2">Keterangan</th>
+<th class="header" rowspan="2">Catatan Kehadiran</th>
+</tr>
+<tr>
+<th class="header">Tugas</th>
+<th class="header">UTS</th>
+<th class="header">UAS</th>
+<th class="header">Tugas</th>
+<th class="header">UTS</th>
+<th class="header">UAS</th>
+</tr>
+<tr>
+<td class="col-nama">Andi Pratama</td>
+<td class="col-s1">85</td>
+<td class="col-s1">80</td>
+<td class="col-s1">88</td>
+<td class="col-s2">90</td>
+<td class="col-s2">85</td>
+<td class="col-s2">92</td>
+<td class="lulus">Lulus</td>
+<td>
+  <table class="inner-table">
+    <tr>
+      <th class="inner-header">Bulan</th>
+      <th class="inner-header">Hadir</th>
+      <th class="inner-header">Izin</th>
+      <th class="inner-header">Alpa</th>
+    </tr>
+    <tr>
+      <td>Agustus</td>
+      <td>14</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>September</td>
+      <td>13</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </table>
+</td>
+</tr>
+<tr>
+<td class="col-nama">Budi Santoso</td>
+<td class="col-s1">60</td>
+<td class="col-s1">55</td>
+<td class="col-s1">58</td>
+<td class="col-s2">65</td>
+<td class="col-s2">60</td>
+<td class="col-s2">62</td>
+<td class="remed">Remedial</td>
+<td style="text-align:left;">Sering terlambat</td>
+</tr>
+<tr>
+<td class="col-nama">Citra Lestari</td>
+<td class="col-s1">92</td>
+<td class="col-s1">90</td>
+<td class="col-s1">95</td>
+<td class="col-s2">94</td>
+<td class="col-s2">91</td>
+<td class="col-s2">96</td>
+<td class="lulus">Lulus</td>
+<td style="text-align:left;">Mahasiswa berprestasi</td>
+</tr>
+<tr>
+<td class="col-nama">Rata-rata Kelas</td>
+<td colspan="3"><b>75,7</b></td>
+<td colspan="3"><b>79,8</b></td>
+<td colspan="2"><b>77,8 (keseluruhan)</b></td>
+</tr>
+</table>
+
+</body>
+</html>

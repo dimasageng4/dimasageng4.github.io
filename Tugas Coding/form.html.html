@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form.html</title>
+</head>
+<body>
+    <h4>form.html</h4>
+<form onsubmit="alert('Data anda sudah terkirim!); return false;">
+
+<div style="border: 1px solid black; padding: 5px;">
+
+<h2>Formulir Pendaftaran</h2>
+
+   <table>
+<tr>
+    <td>Nama Lengkap:<br><input type="text" placeholder="Masukan nama" style="margin: top 5px;margin-bottom: 20px;"></td>
+</tr>
+<tr>
+   <td>Email:<br><input type="email" placeholder="nama@gmail.com" style="margin: top 5px;margin-bottom: 20px;"></td>
+</tr>
+<tr>
+ <td>Password:<br><input type="password" style="margin-bottom: 20px;"></td>
+</tr>
+<tr>
+    <td>Umur:<br><input type="number" style="width: 50px; margin-bottom: 20px;"></td>
+</tr>
+<tr>
+  <td>Tanggal Lahir:<br><input type="date" style="margin-bottom: 20px;"></td>
+</tr>
+<tr>
+<td>Jenis Kelamin:<br>
+  <input type="radio" name="jenis_kelamin" value="laki"> Laki-laki<br>
+  <input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan
+</td>
+    </tr>
+
+    <tr>
+        <td>Hobi:<br>
+        <input type="checkbox">Coding<br>
+ <input type="checkbox">Gaming<br>
+ <input type="checkbox">Olahraga<br><br>
+ </td>
+    </tr>
+
+    <tr>
+        <td>Jurusan:<br>
+            <select>
+                <option>--Pilih Jurusan--</option>
+<option>Teknik Informatika</option>
+<option>Sistem Informasi</option>
+<option>Teknik Jaringan Komputer</option>
+            </select><br><br>
+    </tr>
+
+    <tr>
+    <td>Alamat<br>
+<textarea rows="6" style="width: 105%; margin-top: 0%;" placeholder="Masukan alamat"></textarea>
+</tr>
+
+<td>Foto:<br>
+<input type="file"><br><br>
+
+<tr>
+    <td>Website:<br>
+        <input type="url" placeholder="https://example.com"><br><br>
+</tr>
+
+<tr>
+<td>
+    <div style="display: flex; gap: 8px;">
+    <button type="submit">Kirim</button>
+<button type="reset">Reset</button>
+</tr>
+</div>
+
+</table>
+</form>
+</div>
+</body>
+</html>
