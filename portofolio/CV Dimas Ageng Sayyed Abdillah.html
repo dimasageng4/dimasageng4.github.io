@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Dimas Ageng Sayyed Abdillah</title>
+  <style>
+    :root {
+      --bg: #f3f6f4;
+      --surface: #ffffff;
+      --ink: #1b2a24;
+      --muted: #5b6b64;
+      --accent: #1f6f5c;
+      --line: #d5dfda;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101916;
+        --surface: #17231f;
+        --ink: #e8f0ec;
+        --muted: #9db0a7;
+        --accent: #5fc4a8;
+        --line: #2a3b35;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+    a { color: var(--accent); }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+      position: sticky; top: 0; z-index: 10;
+    }
+    nav {
+      max-width: 900px; margin: auto; padding: 14px 20px;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+    }
+    nav strong { font-size: 1.1rem; }
+    nav ul { list-style: none; display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { text-decoration: none; color: var(--ink); font-family: system-ui, sans-serif; font-size: .95rem; }
+    nav a:hover { color: var(--accent); }
+
+    main { max-width: 900px; margin: auto; padding: 0 20px 40px; }
+    section { padding: 48px 0 8px; }
+    h2 { font-size: 1.6rem; margin-bottom: 18px; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 4px; }
+
+    /* Biodata */
+    #beranda { display: grid; grid-template-columns: 200px 1fr; gap: 32px; align-items: center; padding-top: 56px; }
+    .foto {
+      width: 200px; height: 200px; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 4rem; overflow: hidden;
+    }
+    .foto img { width: 100%; height: 100%; object-fit: cover; }
+    #beranda h1 { font-size: 2.4rem; line-height: 1.2; }
+    .peran { color: var(--accent); font-family: system-ui, sans-serif; margin: 6px 0 14px; }
+    table.biodata { border-collapse: collapse; margin-top: 16px; font-family: system-ui, sans-serif; font-size: .95rem; }
+    table.biodata td { padding: 4px 16px 4px 0; vertical-align: top; }
+    table.biodata td:first-child { color: var(--muted); white-space: nowrap; }
+
+    .kartu {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 8px; padding: 18px 20px; margin-bottom: 14px;
+    }
+    .kartu h3 { font-size: 1.1rem; }
+    .kartu .waktu { font-family: system-ui, sans-serif; font-size: .85rem; color: var(--muted); }
+
+    .skill { margin-bottom: 14px; font-family: system-ui, sans-serif; }
+    .skill-info { display: flex; justify-content: space-between; font-size: .95rem; }
+    .bar { height: 10px; background: var(--line); border-radius: 5px; overflow: hidden; margin-top: 4px; }
+    .bar span { display: block; height: 100%; background: var(--accent); }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+    .grid .kartu { margin: 0; }
+    .grid p { color: var(--muted); font-size: .95rem; margin: 6px 0 10px; }
+
+    footer { text-align: center; padding: 28px 20px; color: var(--muted); border-top: 1px solid var(--line); font-family: system-ui, sans-serif; font-size: .9rem; }
+
+    @media (max-width: 640px) {
+      #beranda { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+      table.biodata { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <strong>Dimas Ageng Sayyed Abdillah</strong>
+      <ul>
+        <li><a href="#beranda">CV Utama</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Pengalaman</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- a. IDENTITAS DIRI / BIODATA -->
+    <section id="beranda">
+      <div class="foto">
+        <img src="FotoDimas.jpeg" alt="FotoDimas.jpeg">
+      </div>
+      <div>
+        <h1>Dimas Ageng Sayyed Abdillah</h1>
+        <p class="peran">Mahasiswa Sistem Informasi, Universitas Mandiri</p>
+        <p>Halo! Saya mahasiswa yang sedang belajar pengembangan web. Saya tertarik membuat website yang rapi, mudah digunakan, dan bermanfaat.</p>
+        <table class="biodata">
+          <tr><td>Tempat, Tgl Lahir</td><td>: Subang, 4 Maret 2008</td></tr>
+          <tr><td>Jenis Kelamin</td><td>: Laki-laki</td></tr>
+          <tr><td>Agama</td><td>: Islam</td></tr>
+          <tr><td>Alamat</td><td>: Jl.Handiwung, RT 03/RW 02, Kec.Pagaden, Kab.Subang, Jawa Barat</td></tr>
+          <tr><td>Email</td><td>: <a href="mailto:dimasageng430@gmail.com">dimasageng430@gmail.com</a></td></tr>
+          <tr><td>No. HP / WA</td><td>: 0852-1010-3690</td></tr>
+        </table>
+      </div>
+    </section>
+
+
+
+
+    <!-- b. PENDIDIKAN -->
+    <section id="pendidikan">
+      <h2>Pendidikan</h2>
+      <article class="kartu">
+        <h3>Universitas Mandiri, Fakultas Teknik</h3>
+        <p class="waktu">2026 - sekarang</p>
+        <p>S1 Sistem Informasi</p>
+      </article>
+      <article class="kartu">
+        <h3>SMA/SMK PGRI Subang</h3>
+        <p class="waktu">2023 - 2026</p>
+        <p>Jurusan Teknik Jaringan Komputer dan Telekomunikasi</p>
+      </article>
+      <article class="kartu">
+        <h3>SMP Negeri 6 Subang</h3>
+        <p class="waktu">2020 - 2023</p>
+      </article>
+       <article class="kartu">
+        <h3>SDN DWI DHARMA</h3>
+        <p class="waktu">2014 - 2020</p>
+      </article>
+    </section>
+
+    <!-- c. SKILLS -->
+    <section id="skills">
+      <h2>Kemampuan (Skills)</h2>
+      <div class="skill">
+        <div class="skill-info"><span>HTML</span><span>80%</span></div>
+        <div class="bar"><span style="width:80%"></span></div>
+      </div>
+      <div class="skill">
+        <div class="skill-info"><span>CSS</span><span>70%</span></div>
+        <div class="bar"><span style="width:70%"></span></div>
+      </div>
+      <div class="skill">
+        <div class="skill-info"><span>JavaScript</span><span>60%</span></div>
+        <div class="bar"><span style="width:60%"></span></div>
+      </div>
+      <div class="skill">
+        <div class="skill-info"><span>Microsoft Office</span><span>75%</span></div>
+        <div class="bar"><span style="width:75%"></span></div>
+      </div>
+    </section>
+
+    <!-- d. PENGALAMAN -->
+    <section id="project">
+      <h2>Pengalaman Kerja</h2>
+      <div class="grid">
+        <article class="kartu">
+          <h3>Gudang Fastock Warehouse </h3>
+          <p>Pekerjaan yang saya lakukan selama berada di gudang yaitu Picking & Packing</p>
+        </article>
+        <article class="kartu">
+          <h3>PT.Meiloon Technology</h3>
+          <p>Pekerjaan yang saya lakukan selama bekerja PT.Meiloon Technology yaitu mencetak produk menggunakan mesin INJECTION</p>
+          
+        
+      </div>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak</h2>
+       <article class="kartu">
+      <p>NO HP / WA : <a href="https://wa.me/6285210103690">0852-1010-3690</a></p>
+      <p> Email : <a href="mailto:dimasageng430@gmail.com">dimasageng430@gmail.com</a></p>
+      <p>Instagram : <a href="https://www.instagram.com/dimasageng430" target="_blank">quetzaloctli.iii</a></p>
+    </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Dimas Ageng Sayyed Abdillah. Dibuat dengan HTML, CSS, dan JavaScript.</p>
+  </footer>
+
+</body>
+</html>
